@@ -1,9 +1,9 @@
-<h1 class="text-center text-success">Company CRM</h1>
+<h1 class="text-center text-primary">Company CRM</h1>
 <h2 class="text-center">Sign Up to Our App</h2>
 
 <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="col-6 m-auto">
   <div class="mb-3">
-    <label for="name" class="form-label">Name:</label>
+    <label for="name" class="form-label">Full Name:</label>
     <input
       #nameFieldRef
       formControlName="name"

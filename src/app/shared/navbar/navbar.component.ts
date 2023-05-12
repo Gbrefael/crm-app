@@ -8,12 +8,13 @@ import { AuthService } from 'src/app/core/auth.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   constructor(
     private route: Router,
     private api: ApiService,
     private auth: AuthService
   ) {}
+  ngOnInit(): void {}
 
   loggedIn(): boolean {
     return this.auth.isLoggedIn();
